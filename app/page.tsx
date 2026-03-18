@@ -7,51 +7,47 @@ export default function Home() {
       <Navbar />
 
       {/* HERO */}
+      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
 
-      <section className="relative w-full h-screen overflow-hidden">
-
-     {/* FUNDO CORRETO */}
+   {/* FUNDO TUNADO DENTRO DO SEU HERO */}
     <div className="absolute inset-0 -z-10">
-     <img
-        src="/images/siteportifolio.webp"
-        className="w-full h-full object-cover"
-      />
+    <img
+    src="/images/siteportifolio.webp"
+    className="w-full h-full object-cover"
+    />
 
-    {/* overlay ajustado */}
-    <div className="absolute inset-0 bg-white/60"></div>
-  </div>
+    <div className="absolute inset-0 bg-white/60 backdrop-blur-sm"></div>
+ </div>
 
-  {/* CONTEÚDO COM RESPIRO */}
-   <div className="max-w-6xl mx-auto px-6 h-full flex items-center">
+  {/* CONTEÚDO */}
+  <div className="relative z-10 max-w-6xl w-full px-6 grid md:grid-cols-2 gap-10 items-center">
 
-    <div className="grid md:grid-cols-2 gap-10 items-center w-full">
+    {/* TEXTO */}
+    <div>
+      <h1 className="text-5xl font-bold leading-tight">
+        Transformo dados em decisões que geram
+        <span className="text-[#F97316]"> crescimento</span>
+      </h1>
 
-      {/* TEXTO */}
-      <div>
-        <h1 className="text-5xl font-bold leading-tight">
-          Transformo dados em decisões que geram
-          <span className="text-[#F97316]"> crescimento</span>
-        </h1>
+      <p className="mt-4 text-[#0B0E14] max-w-md">
+        Data Marketing focado em performance, análise e estratégia.
+      </p>
 
-        <p className="mt-4 text-[#0B0E14] max-w-md">
-          Data Marketing focado em performance, análise e estratégia.
-        </p>
+      <div className="mt-6 flex gap-4">
+        <button className="bg-[#F97316] text-white px-7 py-3 rounded-xl">
+          Ver projetos
+        </button>
 
-        <div className="mt-6 flex gap-4">
-          <button className="bg-[#F97316] text-white px-7 py-3 rounded-xl">
-            Ver projetos
-          </button>
-
-          <button className="border border-gray-300 px-7 py-3 rounded-xl">
-            Contato
-          </button>
-        </div>
+        <button className="bg-[#F97316] text-white px-7 py-3 rounded-xl">
+          Contato
+        </button>
       </div>
+    </div>
 
-      {/* CARDS */}
-      <div className="relative h-[300px]">
+    {/* CARDS */}
+    <div className="relative h-[300px]">
 
-        {/* CARD 1 */}
+      {/* CARD 1 */}
       <div className="absolute top-0 left-0 backdrop-blur-lg bg-white/70 p-4 rounded-xl shadow-lg border-l-4 border-[#FDBA74]">
         <p className="text-xs text-gray-500">SQL</p>
         <h3 className="text-sm font-semibold">Análise de retenção</h3>
@@ -71,16 +67,12 @@ export default function Home() {
         <h3 className="text-sm font-semibold">
           Otimização de funil
         </h3>
-        {/* mantém seus cards */}
       </div>
 
     </div>
-    
+
   </div>
 
-</section>
-
-  
   <section className="bg-[#0B0E14] text-white py-24 px-6">
 
   <div className="max-w-6xl mx-auto">
