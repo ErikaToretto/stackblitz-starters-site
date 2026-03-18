@@ -2,86 +2,165 @@ import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
-    <main className="bg-[#0B0E14] text-[#E2E8F0] min-h-screen p-6">
+    <main className="bg-[#F8FAFC] text-[#0F172A] min-h-screen px-6 py-8">
+
       <Navbar />
-<div className="mb-10" />
 
       {/* HERO */}
-      <section className="mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-          Transformo dados em decisões que aumentam performance de marketing
-        </h1>
+      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
 
-        <p className="text-gray-400 mt-4 max-w-xl">
-          Data Marketing | Python | SQL | Power BI | Branding estratégico
-        </p>
+   {/* FUNDO TUNADO DENTRO DO SEU HERO */}
+   <div className="absolute inset-0">
+     <img 
+     src="/bg_portfolio.webp/home/ErikaToretto/stackblitz-starters-site/public/siteportifolio.webp" 
+     className="w-full h-full object-cover saturate-150 brightness-110" // <-- ADICIONEI ISSO AQUI!
+  />
+  {/* Aqui o blur e o branco */}
+  <div className="absolute inset-0 bg-white/40 backdrop-blur-md"></div>
+</div>
 
-        <div className="mt-6 flex gap-3 flex-wrap">
-          <span className="bg-[#189CFF] px-3 py-1 rounded">Python</span>
-          <span className="bg-[#189CFF] px-3 py-1 rounded">SQL</span>
-          <span className="bg-[#FF7518] px-3 py-1 rounded">Marketing</span>
-          <span className="bg-[#239B56] px-3 py-1 rounded">Analytics</span>
-        </div>
-      </section>
+  {/* CONTEÚDO */}
+  <div className="relative z-10 max-w-6xl w-full px-6 grid md:grid-cols-2 gap-10 items-center">
 
-      {/* FEATURED PROJECTS */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6">Projetos em Destaque</h2>
+    {/* TEXTO */}
+    <div>
+      <h1 className="text-5xl font-bold leading-tight">
+        Transformo dados em decisões que geram
+        <span className="text-[#F97316]"> crescimento</span>
+      </h1>
 
-        <div className="grid md:grid-cols-3 gap-6">
+      <p className="mt-4 text-[#0B0E14] max-w-md">
+        Data Marketing focado em performance, análise e estratégia.
+      </p>
 
-          <div className="border border-[#1f2937] p-5 rounded hover:border-[#189CFF] transition">
-            <h3 className="text-xl font-semibold">E-commerce Growth</h3>
-            <p className="text-gray-400 mt-2 text-sm">
-              Análise de cohort para aumento de LTV e retenção
-            </p>
-          </div>
-
-          <div className="border border-[#1f2937] p-5 rounded hover:border-[#FF7518] transition">
-            <h3 className="text-xl font-semibold">Meta Ads Performance</h3>
-            <p className="text-gray-400 mt-2 text-sm">
-              Otimização de campanhas baseada em dados
-            </p>
-          </div>
-
-          <div className="border border-[#1f2937] p-5 rounded hover:border-[#239B56] transition">
-            <h3 className="text-xl font-semibold">Dashboard BI</h3>
-            <p className="text-gray-400 mt-2 text-sm">
-              Storytelling com dados para tomada de decisão
-            </p>
-          </div>
-
-        </div>
-      </section>
-
-      {/* THINKING / LOGBOOK */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6">Thinking / Logbook</h2>
-
-        <div className="space-y-4">
-          <div className="border border-[#1f2937] p-4 rounded">
-            <p className="text-sm text-gray-500">18.MAR.2026</p>
-            <h3 className="text-lg">Como um erro em SQL mudou minha análise</h3>
-          </div>
-
-          <div className="border border-[#1f2937] p-4 rounded">
-            <p className="text-sm text-gray-500">15.MAR.2026</p>
-            <h3 className="text-lg">Insights de dados aplicados ao marketing</h3>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA FINAL */}
-      <section className="text-center mt-20">
-        <h2 className="text-2xl font-semibold">
-          Quer ver mais ou trabalhar comigo?
-        </h2>
-
-        <button className="mt-6 bg-[#FF7518] px-6 py-3 rounded text-white hover:opacity-80">
-          Entrar em contato
+      <div className="mt-6 flex gap-4">
+        <button className="bg-[#F97316] text-white px-7 py-3 rounded-xl">
+          Ver projetos
         </button>
-      </section>
 
+        <button className="bg-[#F97316] text-white px-7 py-3 rounded-xl">
+          Contato
+        </button>
+      </div>
+    </div>
+
+    {/* CARDS */}
+    <div className="relative h-[300px]">
+
+      {/* CARD 1 */}
+      <div className="absolute top-0 left-0 backdrop-blur-lg bg-white/70 p-4 rounded-xl shadow-lg border-l-4 border-[#FDBA74]">
+        <p className="text-xs text-gray-500">SQL</p>
+        <h3 className="text-sm font-semibold">Análise de retenção</h3>
+      </div>
+
+      {/* CARD 2 */}
+      <div className="absolute top-20 right-0 backdrop-blur-lg bg-white/70 p-5 rounded-xl shadow-lg border-l-4 border-[#3B82F6]">
+        <p className="text-xs text-gray-500">Insight</p>
+        <h3 className="text-md font-semibold">
+          +23% conversão
+        </h3>
+      </div>
+
+      {/* CARD 3 */}
+      <div className="absolute bottom-0 left-10 backdrop-blur-lg bg-white/70 p-4 rounded-xl shadow-lg border-l-4 border-[#22C55E]">
+        <p className="text-xs text-gray-500">Growth</p>
+        <h3 className="text-sm font-semibold">
+          Otimização de funil
+        </h3>
+      </div>
+
+    </div>
+
+  </div>
+
+  <section className="bg-[#0B0E14] text-white py-24 px-6">
+
+  <div className="max-w-6xl mx-auto">
+
+    {/* HEADER */}
+    <div className="mb-12">
+      <h2 className="text-3xl font-bold">
+        Projetos & Pensamentos
+      </h2>
+      <p className="text-gray-400 mt-2">
+        Aplicando dados para gerar impacto real em marketing
+      </p>
+    </div>
+
+    {/* GRID */}
+    <div className="grid md:grid-cols-2 gap-8">
+
+      {/* PROJETO */}
+      <div className="relative rounded-2xl p-[1px] bg-gradient-to-br from-[#FDBA74] via-transparent to-[#86EFAC]">
+
+        <div className="bg-[#0B0E14]/90 backdrop-blur-sm rounded-2xl p-6 h-full border border-[#1E293B] shadow-[0_0_25px_rgba(249,115,22,0.15)]">
+
+          <p className="text-sm text-[#93C5FD] mb-2">
+            Projeto em destaque
+          </p>
+
+          <h3 className="text-xl font-semibold">
+            Otimização de campanhas de Ads
+          </h3>
+
+          <p className="text-gray-400 mt-3 text-sm">
+            Análise de dados para melhorar ROAS e reduzir custo por aquisição.
+          </p>
+
+          <div className="mt-6 flex gap-2 flex-wrap">
+            <span className="bg-[#93C5FD]/10 text-[#93C5FD] px-3 py-1 rounded">
+              SQL
+            </span>
+            <span className="bg-[#86EFAC]/10 text-[#86EFAC] px-3 py-1 rounded">
+              Python
+            </span>
+            <span className="bg-[#FDBA74]/10 text-[#FDBA74] px-3 py-1 rounded">
+              Marketing
+            </span>
+          </div>
+
+          <button className="mt-6 border border-[#FDBA74] text-[#FDBA74] px-5 py-2 rounded-lg text-sm hover:bg-[#FDBA74]/10 transition">
+            Ver projeto
+          </button>
+
+        </div>
+      </div>
+
+      {/* THINKING */}
+      <div className="relative rounded-2xl p-[1px] bg-gradient-to-br from-[#93C5FD] via-transparent to-[#FDBA74]">
+
+        <div className="bg-[#0B0E14]/90 backdrop-blur-sm rounded-2xl p-6 h-full border border-[#1E293B] shadow-[0_0_25px_rgba(59,130,246,0.15)]">
+
+          <p className="text-sm text-[#86EFAC] mb-2">
+            Thinking em destaque
+          </p>
+
+          <h3 className="text-xl font-semibold">
+            Como dados mudam decisões de marketing
+          </h3>
+
+          <p className="text-gray-400 mt-3 text-sm">
+            Reflexões sobre como interpretar dados e evitar decisões erradas.
+          </p>
+
+          <div className="mt-6 text-sm text-gray-500">
+            18.MAR.2026
+          </div>
+
+          <button className="mt-6 border border-[#86EFAC] text-[#86EFAC] px-5 py-2 rounded-lg text-sm hover:bg-[#86EFAC]/10 transition">
+            Ler artigo
+          </button>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+</section>
     </main>
   );
 }
