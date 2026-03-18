@@ -10,10 +10,10 @@ export default function Home() {
       <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
 
    {/* FUNDO TUNADO DENTRO DO SEU HERO */}
-    <div className="absolute inset-0 -z-10">
+    <div className="absolute inset-0 bg-white/60 backdrop-blur-sm">
     <img
-    src="/home/ErikaToretto/stackblitz-starters-site/public/images/siteportifolio.webp"
-    className="w-full h-full object-cover"
+    src="/home/ErikaToretto/stackblitz-starters-site/public/images/siteportifolio.webppublic/images/siteportifolio.webp"
+    className="w-full h-full object-cover [filter:contrast(1.2)_brightness(0.9)_saturate(1.1)]"
     />
 
     
