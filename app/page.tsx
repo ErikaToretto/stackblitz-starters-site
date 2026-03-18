@@ -12,11 +12,11 @@ export default function Home() {
    {/* FUNDO TUNADO DENTRO DO SEU HERO */}
     <div className="absolute inset-0 -z-10">
     <img
-    src="/images/siteportifolio.webp"
+    src="/home/ErikaToretto/stackblitz-starters-site/public/images/siteportifolio.webp"
     className="w-full h-full object-cover"
     />
 
-    <div className="absolute inset-0 bg-white/60 backdrop-blur-sm"></div>
+    
  </div>
 
   {/* CONTEÚDO */}
