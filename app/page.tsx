@@ -1,6 +1,10 @@
+import Navbar from "./components/Navbar";
+
 export default function Home() {
   return (
     <main className="bg-[#0B0E14] text-[#E2E8F0] min-h-screen p-6">
+      <Navbar />
+<div className="mb-10" />
 
       {/* HERO */}
       <section className="mb-16">
