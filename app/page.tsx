@@ -12,7 +12,7 @@ export default function Home() {
    {/* FUNDO TUNADO DENTRO DO SEU HERO */}
     <div className="absolute inset-0 bg-white/60 backdrop-blur-sm">
     <img
-    src="/home/ErikaToretto/stackblitz-starters-site/public/images/siteportifolio.webppublic/images/siteportifolio.webp"
+    src="/images/siteportifolio.webp"
     className="w-full h-full object-cover [filter:contrast(1.2)_brightness(0.9)_saturate(1.1)]"
     />
 
@@ -24,9 +24,9 @@ export default function Home() {
 
     {/* TEXTO */}
     <div>
-      <h1 className="text-5xl font-bold leading-tight">
-        Transformo dados em decisões que geram
-        <span className="text-[#F97316]"> crescimento</span>
+      <h1 className="text-5xl font-bold leading-tight text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
+  Transformo dados em decisões que geram
+  <span className="text-[#F97316]"> crescimento</span>
       </h1>
 
       <p className="mt-4 text-[#0B0E14] max-w-md">
